@@ -1,0 +1,614 @@
+*{
+    padding: 0;
+    margin: 0;
+    /*outline: 1px solid red;*/
+}
+
+body{
+    font-family: 'calibri', sans-serif;
+    font-size: 1rem;
+}
+
+main{
+    display: grid;
+    grid-template-columns:repeat(2,auto);
+    grid-template-rows: auto;
+    margin: 1rem;
+    width:90%;
+}
+
+.column-2{
+    padding: 0 2rem;
+}
+
+.top-header{
+    display: flex;
+    justify-content: space-between;
+}
+.hamburger{
+    display:none ;
+}
+.hamburger img{
+    height:1.5rem;
+    width:2rem;
+}
+.profile{
+    display: none;
+}
+.profile img{
+    height:2rem;
+    width:2rem;
+}
+.logo-welcome-user-wrapper{
+    display: flex;
+    align-items: center;
+}
+.welcome-user-wrapper{
+    margin-left: 2rem;
+}
+.logo-welcome-user-wrapper img{
+    height:4rem;
+    width:12rem;
+}
+
+.socials-language-wrapper{
+    justify-items: center;
+}
+.socials{
+    display: flex;
+    justify-content: space-evenly;
+}
+.language-wrapper{
+    display: flex;
+    margin-top: 1rem;
+}
+.socials img{
+    height:1.5rem;
+    width:1.5rem;
+    padding: 0 0.5rem;
+}
+.language-wrapper img{
+    height:1.2rem;
+    width:2.5rem;
+    padding: 0 0.5rem;
+}
+
+
+.column-2 nav{
+    margin-top: 2rem;
+    background-color: #f40000;
+    border-radius: 10px;
+}
+nav li{
+    display: inline-block;
+    padding:0.7rem;
+    border-right: 1.2px solid #e7e7e7;
+    font-weight: 700;
+}
+nav li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.active{
+    text-decoration: underline;
+}
+nav .account{
+    background-color: #0062a3;
+    float: right;
+    border-right: none;
+    border-radius: 10px;
+}
+
+.column-2 .hero-image img{
+    width:100%;
+    height:400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+.hero-image{
+    margin-top: 2rem;
+}
+
+/*---------------------------------------------------------------------------------------------------------*/
+.column-2 .pick-buy-win{
+   display: flex;
+   gap: 1rem;
+   font-size: 0.8rem;
+}
+.you-pick-wrapper{
+    margin-top:3rem;
+    width:20rem;
+    padding: 0.3rem;
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.you-pick-wrapper img{
+    height: 4rem;
+    width: 4rem;
+}
+.you-pick-details-wrapper{
+    padding: 0.3rem;
+}
+.you-pick-play-now-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.we-buy-wrapper{
+    margin-top:3rem;
+    width:20rem;
+    padding: 0.3rem;
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.we-buy-wrapper img{
+    height: 4rem;
+    width: 4rem;
+}
+.we-buy-details-wrapper{
+    padding: 0.3rem;
+}
+.we-buy-play-now-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.you-win-wrapper{
+    margin-top:3rem;
+    width:20rem;
+    padding: 0.3rem;
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.you-win-wrapper img{
+    height: 4rem;
+    width: 4rem;
+}
+.you-win-details-wrapper{
+    padding: 0.3rem;
+}
+.you-win-play-now-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+/*---------------------------------------------------------------------------------------------------------*/
+.lottery-draws-header {
+    margin-top: 3rem;
+}
+.column-2 .lottery-draws-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.oz-lotto-wrapper{
+    width:21rem;
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+.oz-lotto-wrapper .oz-lotto{
+    width:6rem;
+    height:4rem;
+}
+.oz-mega-millions-wrapper{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+}
+.mega-millions-price-wrapper{
+    margin-left: 1rem;
+}
+.mega-millions{
+    display: flex;
+    gap:1rem;
+    margin-bottom: 1rem;
+}
+.mega-millions img{
+    width:1.5rem;
+    height:1rem;
+}
+.play-now-timer-wrapper{
+    background-color: #0062a3;
+    border-radius: 0  0 10px 10px;
+    padding:1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.play-now-timer-wrapper button{
+    outline:none;
+    border:none;
+    width:10rem;
+    border-radius:5px;
+    padding:0.5rem;
+    background-color:#f7d400;
+    color:#0d0e08;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.timer-wrapper{
+    display: flex;
+}
+.play-now-timer-wrapper img{
+    height: 1rem;
+    width:1em;
+}
+
+/*-------------------------------------------------------------------------------------------------------------*/
+.column-2 .mega-millions-lotto-container{
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    grid-template-rows: auto;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+ .mega-millions-lotto-wrapper{
+    width: 10rem;
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+}
+.mega-millions-lotto-wrapper button{
+    margin-top: 1rem;
+    outline:none;
+    border:none;
+    width:10rem;
+    border-radius:5px;
+    padding:0.5rem;
+    background-color:#f7d400;
+    color:#0d0e08;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.mega-millions-lotto-wrapper #mega-million-image{
+    margin-bottom: 1rem;
+    height:4rem;
+    width:4rem;
+}
+#star{
+    float: right;
+    height:1rem;
+    width:1rem;
+}
+#mega-millions{
+    justify-content: center;
+}
+.time-wrapper{
+    display: flex;
+    justify-content: center;
+    color: #0062a3;
+    gap:0.2rem;
+}
+.time-wrapper img{
+    height:1em;
+    width:1rem;
+}
+
+.red-bg-header{
+    background-color:#f40000; 
+    margin-top: 3rem;
+    color: #ffffff; 
+    padding:0.5rem 0; 
+    text-align: center; 
+    border-radius: 10px;
+}
+.uk-results{
+    background-color: #f40000; 
+    border-radius: 50%; 
+    color:#ffffff; 
+    padding:0.2rem;
+}
+
+.more-lotteries{
+    display: flex;
+    justify-content:flex-end; 
+    margin-top:1rem;
+}
+/*--------------------------------------------------------------------------------------------------------*/
+
+.biggest-lottery-winner-container{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows: auto;
+    gap: 1rem;
+}
+.biggest-lottery-winner-container .section-1{
+    width: 35rem;
+}
+.winners-details-border{
+    border: 1px solid #e6e6e6;
+    margin-top:1rem;
+    border-radius: 10px;
+    padding: 1rem;
+}
+.winners-price{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+}
+.winners-price img{
+    width:3rem;
+    height:3rem;
+}
+.winners-image-description{
+    display: flex;
+    align-items: center;
+}
+.winners-image img{
+    height: 10rem;
+    width:17rem;
+}
+.winners-description{
+    text-align: center;
+}
+.winners-description button{
+    outline:none;
+    border:none;
+    width:15rem;
+    border-radius:5px;
+    padding:0.5rem;
+    background-color:#f7d400;
+    color:#0d0e08;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.biggest-lottery-winner-container .section-2{
+    width:25rem;
+}
+.latest-winners-section-1{
+    border: 1px solid #e6e6e6;
+    margin-top:1rem;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.latest-winners-section-2{
+    display: flex;
+    align-items: center;
+    gap:1rem;
+    border: 1px solid #e6e6e6;
+    margin-top:2rem;
+    border-radius: 10px;
+    padding: 1rem;
+}
+.latest-winners-section-2 img{
+    height:3rem;
+    width:3rem;
+}
+.winners-history{
+    line-height: 1.5rem;
+}
+.winners-history img{
+    height:1rem;
+    width:1.5rem;
+}
+.germany-winner{
+    display: flex;
+    align-items: center;
+    gap:0.2rem;
+}
+
+/*---------------------------------------FREQUENT QUESTIONS AND ANSWERS SECTION---------------------------------------------------------------*/
+.faq{
+    margin:4rem 0;
+    width:30rem;
+}
+.accordion{
+    border-bottom: 1px solid #c4c4c4;
+    padding: 0.3rem;
+    cursor: pointer;
+}
+.accordion-question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#accordion-answer{
+    display: none;
+}
+.accordion img{
+    width:1rem;
+    height:2rem;
+}
+
+/*-------------------------------------------FOOTER-----------------------------------------------------------------*/
+
+footer{
+    background-image: linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.7)), url(assets/footer-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    padding: 4rem 4rem 2rem 4rem;
+}
+.row-1{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.row-1 img{
+    height:2rem;
+    width:2rem;
+}
+.row-1 .whatsapp{
+    display: flex;
+    gap:1rem;
+    align-items: center;
+}
+.whatsapp img{
+    height:2rem;
+    width:2rem;
+}
+.whatsapp{
+    display: flex;
+}
+.row-1 .social-icons{
+    margin-right: 4rem;
+}
+.col-container{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: auto;
+}
+footer .col-1 a{
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    padding:0.2rem;
+}
+
+footer .col-2{
+    width:21rem;
+}
+
+footer .col-3 .payment-methods{
+    height: 7rem;
+    width: 10rem;
+    margin-top: 1rem;
+}
+footer .col-3 .security-trust{
+    height: 5rem;
+    width: 9rem;
+    margin-top: 1rem;
+}
+
+
+@media screen and (max-width:600px){
+    body{
+        width:100%;
+    }
+    .red-bg-header{
+        margin: 3rem 2rem;
+    }
+    main{
+        grid-template-columns: 1fr;
+        width:100%;
+        margin: 0;
+    }
+    main .column-1{
+        display: none;
+    }
+    main .column-2{
+        width:100%;
+        padding: 0;
+    }
+    
+    .top-header{
+        justify-content: center;
+        align-items:center;
+    }
+    .top-header .hamburger, .profile{
+        display: block;
+    }
+    .socials-language-wrapper{
+        display: none;
+    }
+    .logo-welcome-user-wrapper{
+        flex-direction: column-reverse;
+        gap:1rem;
+    }
+    .logo-welcome-user-wrapper img{
+        order:2
+    }
+    .welcome-user-wrapper{
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    nav{
+        display:none ;
+    }
+    nav li{
+        display: block;
+    }
+
+    .column-2 .hero-image img{
+        height: 300px;
+    }
+
+    .column-2 .pick-buy-win{
+        flex-direction: column;
+        align-items: center;
+        gap:0;
+        font-size: 1rem;
+    }
+    .you-pick-wrapper, .we-buy-wrapper, .you-win-wrapper{
+        width:22rem;
+        padding: 2rem;
+    }
+    .lottery-draws-header{
+        display: flex;
+        justify-content: center;
+        margin-top: 4rem;
+        font-size: 1.7rem;
+    }
+    .column-2 .lottery-draws-wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column-2 .mega-millions-lotto-container{
+        grid-template-columns: repeat(2,auto);
+        place-items: center;
+    }
+    .mega-millions-lotto-wrapper{
+        width:11rem;
+    }
+    .more-lotteries{
+        justify-content: center;
+    }
+
+    .biggest-lottery-winner-container{
+        grid-template-columns: auto;
+        place-items: center;
+    }
+    .biggest-lottery-winner-container .section-1{
+        width: 28rem;
+    }
+    .biggest-lottery-winner-container .section-1 button{
+        width:9rem;
+    }
+    .biggest-lottery-winner-container .section-2{
+        width:28rem;
+    }
+    .faq{
+      margin: 3rem auto;
+      width: 28rem;
+    }
+
+    .col-container{
+        grid-template-columns: auto;
+        place-items: center;
+        gap:2rem;
+    }
+    .col-1-links{
+        display: flex;
+        align-items: center;
+        gap:1rem;
+    }
+    .col-3{
+        display: flex;
+        gap:1.5rem;
+    }
+    .row-1 .social-icons{
+        margin-right: 0;
+    }
+}
